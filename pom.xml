@@ -6,7 +6,7 @@
 	<groupId>com.sample</groupId>
 	<artifactId>samplePJ</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>17</java.version>
