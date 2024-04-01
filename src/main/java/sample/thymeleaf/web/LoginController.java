@@ -16,7 +16,7 @@ public class LoginController {
 
     @Resource
     LoginServiceImpl loginServiceImpl;
-      
+
     // -----------------------------------------------------------
     //  GET http://localhost:8080/login
     // -----------------------------------------------------------
