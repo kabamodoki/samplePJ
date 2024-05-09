@@ -69,11 +69,11 @@
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443" />
-     <Connector
+     <!-- <Connector
     protocol="org.apache.coyote.http11.Http11NioProtocol"
     port="8443" maxThreads="150" scheme="https" secure="true" SSLEnabled="true"
     keystoreFile="conf/myprojectkey.jks" keystorePass="111AAA"
-    clientAuth="false" sslProtocol="TLS" />
+    clientAuth="false" sslProtocol="TLS" /> -->
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -88,15 +88,16 @@
          Either JSSE or OpenSSL style configuration may be used regardless of
          the SSLImplementation selected. JSSE style configuration is used below.
     -->
-    <!--
+    
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
                maxThreads="150" SSLEnabled="true">
         <SSLHostConfig>
-            <Certificate certificateKeystoreFile="conf/localhost-rsa.jks"
+            <Certificate certificateKeystoreFile="conf/myprojectkey.jks"
+                         certificateKeystorePassword="111AAA"
                          type="RSA" />
         </SSLHostConfig>
     </Connector>
-    -->
+   
     <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443 with HTTP/2
          This connector uses the APR/native implementation which always uses
          OpenSSL for TLS.

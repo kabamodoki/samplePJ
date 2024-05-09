@@ -8,7 +8,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY target/samplePJ-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # server.xmlをTomcatのconfディレクトリにコピー
-COPY debelopTools/Docker/front/server.xml /usr/local/tomcat/conf
+# COPY ./spring/conf/server.xml /usr/local/tomcat/conf/server.xml
 
 # Tomcatを起動するコマンド。これがコンテナのデフォルトの実行コマンドになる。
 CMD ["catalina.sh", "run"]
