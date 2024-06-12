@@ -1,5 +1,17 @@
-{"properties": [{
-  "name": "password.hash.code",
-  "type": "java.lang.String",
-  "description": "A description for 'password.hash.code'"
-}]}
+{"properties": [
+  {
+    "name": "password.hash.code",
+    "type": "java.lang.String",
+    "description": "A description for 'password.hash.code'"
+  },
+  {
+    "name": "quarkus.infinispan.client.global-state.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'quarkus.infinispan.client.global-state.enabled'"
+  },
+  {
+    "name": "quarkus.transaction-manager.enable-recovery",
+    "type": "java.lang.String",
+    "description": "A description for 'quarkus.transaction-manager.enable-recovery'"
+  }
+]}

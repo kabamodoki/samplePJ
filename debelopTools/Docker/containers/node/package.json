@@ -1,19 +1,12 @@
 {
-  "name": "node",
+  "name": "node-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Node.js app with Express.js",
+  "main": "app.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "express": "^4.17.1"
   }
 }

@@ -5,13 +5,10 @@ FROM tomcat:jdk17-temurin-jammy
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # WARファイルをTomcatのwebappsディレクトリにコピー
-# COPY target/samplePJ-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
-
-# server.xmlをTomcatのconfディレクトリにコピー
-# COPY ./spring/conf/server.xml /usr/local/tomcat/conf/server.xml
+COPY ../../../../target/samplePJ-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Tomcatを起動するコマンド。これがコンテナのデフォルトの実行コマンドになる。
 CMD ["catalina.sh", "run"]
 
 # コンテナがリッスンするポートを指定
-EXPOSE 8080
+#EXPOSE 8080
