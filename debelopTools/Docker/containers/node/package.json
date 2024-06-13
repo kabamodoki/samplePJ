@@ -1,12 +1,14 @@
 {
-  "name": "node-app",
+  "name": "your-app-name",
   "version": "1.0.0",
-  "description": "Node.js app with Express.js",
   "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
+  "type": "module",
   "dependencies": {
-    "express": "^4.17.1"
+    "connect-redis": "^7.1.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "ioredis": "^4.17.3",
+    "keycloak-connect": "^25.0.0",
+    "redis": "^4.6.14"
   }
 }

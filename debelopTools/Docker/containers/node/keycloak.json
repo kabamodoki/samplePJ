@@ -1,0 +1,10 @@
+{
+  "realm": "sampleRealm",
+  "auth-server-url": "http://localhost:8081/auth",
+  "ssl-required": "none",
+  "resource": "node-app",
+  "credentials": {
+    "secret": "YOUR_CLIENT_SECRET"
+  },
+  "confidential-port": 0
+}
